@@ -1,0 +1,40 @@
+from app.models.game import Game, Team
+
+MOCK_GAMES = [
+    Game(
+        home=Team(
+            name="Lakers",
+            win_pct=0.62,
+            pace_rank=12,
+            stars=2,
+            playoff_position=6,
+        ),
+        away=Team(
+            name="Warriors",
+            win_pct=0.59,
+            pace_rank=5,
+            stars=2,
+            playoff_position=8,
+        ),
+        is_division_rival=True,
+        national_tv=True,
+    ),
+    Game(
+        home=Team(
+            name="Pistons",
+            win_pct=0.22,
+            pace_rank=27,
+            stars=0,
+            playoff_position=None,
+        ),
+        away=Team(
+            name="Hornets",
+            win_pct=0.25,
+            pace_rank=25,
+            stars=0,
+            playoff_position=None,
+        ),
+        is_division_rival=False,
+        national_tv=False,
+    ),
+]
